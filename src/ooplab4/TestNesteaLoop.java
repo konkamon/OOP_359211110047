@@ -13,6 +13,7 @@ public class TestNesteaLoop {
                 }else
                 {
                     System.out.print(x+++"\t");
+                    System.out.print(x+++"\t");
                 }
             }//j
             System.out.println();
