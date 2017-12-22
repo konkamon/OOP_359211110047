@@ -11,15 +11,18 @@ public class InputDataToArray {
         number = inputData (number);
         showData (number);
         showDataEnchance(number);
+
     }//main
 
-    private static void showData(int[] number) {
-    }
-
-    private static void showDataEnchance (int [] number){
+    private static void showDataEnchance (int [] number) {
         System.out.println("Data in Array: ");
-        for (int val:number)
-            System.out.print(val+" ");
+        for (int val : number)
+            System.out.print(val + " ");
+    }
+    private static void showData(int[] number) {
+        System.out.println("Data in Array: ");
+        for (int i=0;i<number.length;)
+            System.out.println(number[i]+" ");
     }
 
 
@@ -35,6 +38,7 @@ public class InputDataToArray {
             number[i] = scanner.nextInt();
         }
         return number;
+
 
     }
 }//class
