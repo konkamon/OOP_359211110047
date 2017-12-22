@@ -13,6 +13,9 @@ public class InputDataToArray {
         showDataEnchance(number);
     }//main
 
+    private static void showData(int[] number) {
+    }
+
     private static void showDataEnchance (int [] number){
         System.out.println("Data in Array: ");
         for (int val:number)
@@ -24,8 +27,7 @@ public class InputDataToArray {
         System.out.println("Data in Array: ");
         for (int i=0;i<number.length;i++)
             System.out.print(number[1]+" ");
-
-
+        
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter an integer");
         for (int i=0;i<number.length;i++){
