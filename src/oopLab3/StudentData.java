@@ -9,8 +9,8 @@ import java.io.BufferedReader;
 //4. ที่อยู่
 //5. email
 //หมายเหตุ: ต้องรับค่าข้อมูลแต่ละข้อมูลโดยการใช้ Methods
-public class StudentData {
-   static BufferedReader
-    }//main
+//public class StudentData {
+  // static BufferedReader
+    //}//main
 
-}//class
+//}//class
