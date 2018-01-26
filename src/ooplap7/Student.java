@@ -4,12 +4,30 @@ package ooplap7;
 // 2.Name
 // 3.person ID
 // 4.Address
-// Access Control
-
-
-
 
 public class Student {
+    //properties of Student class
+    public static int age;
+    public String group;
+    private String id;
+    private String name;
+    private String pid;
+    private String address;
+
+    //constructor
+    //default constructor
+    public Student() {
+    }
+
+    //create by own
+    public Student(String id, String n, String pid, String a) {
+        //assign data to cless properties
+        this.id = id;
+        this.name = n;
+        this.pid = pid;
+        this.address = a;
+    }
+    // getter and setter methods
     @Override
     public String toString() {
         return "Student{" +
@@ -18,49 +36,32 @@ public class Student {
                 ", pid='" + pid + '\'' +
                 ", address='" + address + '\'' +
                 '}';
-    }
-
-    //properties of Student class
-    private String id;
-    private String name;
-    private String pid;
-    private String address;
-    //Constructor
-    //default constructor
-    public Student (){}
-    //create by own
-    public Student (String id, String n, String pid, String a){
-        //assige data to class properties
-        this.id = id;
-        this.name = n;
-        this.pid = pid;
-        this.address = a;
-
-    }
-    //gatter and setter methods
-    public String getId() {
+    }public String getId(){
         return this.id;
     }
     public void setId(String id){
         this.id = id;
     }
-
-    public String getName() {
-        return this.name;
+    public String getName (){
+        return  this.name;
     }
     public void setName(String name){
         this.name = name;
     }
-    public String getpid() {
-        return this.pid;
+    public String getPid (){
+        return  this.pid;
     }
-    public void setpid(String pid){
+    public void setPid (String pid){
         this.pid = pid;
     }
-    public String address() {
-        return this.address;
+    public String getAddress (){
+        return  this.address;
     }
-    public void setaddress(String address){
+    public void setAddress(String address){
         this.address = address;
     }
+
+
+
+
 }//class
