@@ -1,19 +1,21 @@
 package ooplab9;
 
 public class Person {
-    private String name;
-    private String age;
-    private Address Address;
-    private Jop Jop;
-    //constructor
 
-    public Person(String name, String age, ooplab9.Address address, Jop jop) {
-        this.name = name;
-        this.age = age;
-        Address = address;
-        Jop = jop;
+    private String name;
+    private int age;
+    private Address address;
+    private Job job;
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", address=" + address +
+                ", job=" + job +
+                '}';
     }
-    //gatter and setter method
 
     public String getName() {
         return name;
@@ -23,38 +25,34 @@ public class Person {
         this.name = name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public ooplab9.Address getAddress() {
-        return Address;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setAddress(ooplab9.Address address) {
-        Address = address;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
-    public Jop getJop() {
-        return Jop;
+    public Job getJob() {
+        return job;
     }
 
-    public void setJop(Jop jop) {
-        Jop = jop;
+    public void setJob(Job job) {
+        this.job = job;
     }
-    //toString
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age='" + age + '\'' +
-                ", Address=" + Address +
-                ", Jop=" + Jop +
-                '}';
+    public Person(String name, int age, Address address, Job job) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.job = job;
     }
-}//class
+}
